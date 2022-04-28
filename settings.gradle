@@ -1,0 +1,26 @@
+
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+    }
+}
+
+dependencyResolutionManagement{
+repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+    gradlePluginPortal()
+    google()
+    mavenCentral()
+
+    maven {
+        url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+    }
+}
+}
+rootProject.name = "videocalling"
+include ':app'

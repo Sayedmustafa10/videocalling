@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">videocalling</string>
+    <string name="join">Join</string>
+    <string name="enter_the_secret_code">enter the secret code</string>
+</resources>
